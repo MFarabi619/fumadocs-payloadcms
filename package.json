@@ -4,17 +4,24 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "start": "next start",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
+    "@payloadcms/db-sqlite": "^3.48.0",
+    "@payloadcms/next": "^3.48.0",
+    "@payloadcms/payload-cloud": "^3.48.0",
+    "@payloadcms/richtext-lexical": "^3.48.0",
     "fumadocs-core": "15.6.5",
     "fumadocs-mdx": "11.7.0",
     "fumadocs-ui": "15.6.5",
+    "graphql": "^16.11.0",
     "next": "15.4.3",
+    "payload": "^3.48.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
@@ -27,5 +34,10 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
+  },
+  "optionalDependencies": {
+    "@libsql/darwin-arm64": "0.5.16",
+    "@libsql/linux-arm64-gnu": "0.5.16",
+    "@libsql/linux-x64-gnu": "0.5.16"
   }
 }
