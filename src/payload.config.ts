@@ -1,4 +1,3 @@
-// storage-adapter-import-placeholder
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
 // import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
@@ -26,9 +25,17 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
+  serverURL: process.env.NODE_ENV !== "development" && process.env.PUBLIC_URL || '',
+  cors: process.env.CORS_WHITELIST_ORIGINS
+    ? process.env.CORS_WHITELIST_ORIGINS.split(",")
+    : [],
+  csrf: process.env.CSRF_WHITELIST_ORIGINS
+    ? process.env.CSRF_WHITELIST_ORIGINS.split(",")
+    : [],
   db: sqliteAdapter({
     client: {
-      url: process.env.DATABASE_URI || '',
+      url: process.env.DATABASE_URI || process.env.TURSO_DATABASE_URL || '',
+      authToken: process.env.AUTH_TOKEN || process.env.TURSO_AUTH_TOKEN || '',
     },
   }),
   sharp,

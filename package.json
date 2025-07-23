@@ -9,6 +9,7 @@
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
+    "@libsql/client": "^0.15.10",
     "@payloadcms/db-sqlite": "^3.48.0",
     "@payloadcms/next": "^3.48.0",
     "@payloadcms/payload-cloud": "^3.48.0",
@@ -17,6 +18,7 @@
     "fumadocs-mdx": "11.7.0",
     "fumadocs-ui": "15.6.5",
     "graphql": "^16.11.0",
+    "libsql": "^0.5.16",
     "next": "15.4.3",
     "payload": "^3.48.0",
     "react": "^19.1.0",

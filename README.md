@@ -1,38 +1,40 @@
-# fumadocs-payloadcms
+<div align="center">
+<h1><strong> <a href="https://fumdocs.dev">
+  <img src="public/fumadocs.svg" alt="Fumadocs Symbol" width="25" height="25">
+</a> Fumadocs + PayloadCMS <a href="https://payloadcms.com">
+  <img src="public/payload-favicon.svg" alt="Payload CMS Symbol" width="25" height="25">
+</a> </strong> </h1>
+</div>
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+| [Fumadocs](https://fumadocs.dev) | [Payload CMS](https://payloadcms.com) | 
+|-|-|
+| ![Fumadocs Landing Page](public/fumadocs-landing-page.png) | ![Payload CMS Landing Page](public/payloadcms-landing-page.png) |
+
+This is a simple example for using [Fumadocs](https://fumadocs.dev) with [Payload CMS](https://payloadcms.com) combined into a single [Next.js](https://nextjs.org) app.
+
+## Setup
+
+Initialize the project:
+
+```bash
+pnpm i
+```
 
 Run development server:
 
 ```bash
-npm run dev
-# or
 pnpm dev
-# or
-yarn dev
 ```
 
 Open http://localhost:3000 with your browser to see the result.
 
-## Explore
+## Deploy
 
-In the project, you can see:
+Before deploying, set the variables from `.env.example` in your `.env.production` or hosting platform.
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `app/layout.config.tsx`: Shared options for layouts, optional but preferred to keep.
+Make sure to add your production url to CORS & CSRF origins as well to be able to query the deployed API endpoints.
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
-
-### Fumadocs MDX
-
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
-
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+You can deploy it to any Next.js-compatible platform.
 
 ## Learn More
 
