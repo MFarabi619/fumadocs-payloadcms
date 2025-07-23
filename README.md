@@ -34,7 +34,11 @@ Before deploying, set the variables from `.env.example` in your `.env.production
 
 Make sure to add your production url to CORS & CSRF origins as well to be able to query the deployed API endpoints.
 
-You can deploy it to any Next.js-compatible platform.
+This example uses [SQLite](https://www.sqlite.org) as the database. You can deploy it to any Next.js-compatible platform with a cloud integration with providers such as [Turso](https://turso.tech).
+
+| [Vercel](https://vercel.com) | [Netlify](https://netlify.com) |
+|-|-|
+| ![Vercel Turso Integration](public/vercel-turso-integration.png) | ![Netlify Turso Extension](public/netlify-turso-extension.png) |
 
 ## Learn More
 
