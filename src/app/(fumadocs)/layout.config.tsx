@@ -13,15 +13,24 @@ export const baseOptions: BaseLayoutProps = {
     title: (
       <>
         <picture>
-          <source srcSet="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg" />
+          <source srcSet="/fumadocs.svg" />
           <Image
-            alt="Payload Logo"
+            alt="Fumadocs Logo Symbol"
             height={35}
-            src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg"
+            src="/fumadocs.svg"
             width={35}
           />
         </picture>
-        My App
+        +
+        <picture>
+          <source srcSet="/payload-favicon.svg" />
+          <Image
+            alt="Payload Logo"
+            height={35}
+            src="/payload-favicon.svg"
+            width={35}
+          />
+        </picture>
       </>
     ),
   },
