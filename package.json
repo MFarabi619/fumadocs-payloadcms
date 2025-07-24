@@ -1,16 +1,20 @@
 {
   "name": "fumadocs-payloadcms",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "ri": "set -ex; git clean -fdX -e '!.env*'; pnpm i",
+    "clean": "rm -rf sqlite.db; rm -rf media",
     "build": "next build",
     "dev": "next dev",
-    "start": "next start",
+    "start": "next build; next start",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
     "@libsql/client": "^0.15.10",
     "@payloadcms/db-sqlite": "^3.48.0",
+    "@payloadcms/storage-s3": "^3.48.0",
     "@payloadcms/next": "^3.48.0",
     "@payloadcms/payload-cloud": "^3.48.0",
     "@payloadcms/richtext-lexical": "^3.48.0",

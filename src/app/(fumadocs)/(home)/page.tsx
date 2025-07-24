@@ -16,12 +16,12 @@ export default async function HomePage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen px-4 py-12 text-center">
         <div>
-          {!user && <h1 className="text-xl font-semibold">Welcome to your new project.</h1>}
+          {!user && <h1 className="text-xl font-semibold">Fumadocs + Payload CMS Minimal Starter Template.</h1>}
           {user && <h1 className="text-xl font-semibold">Welcome back, {user.email}</h1>}
         </div>
 
       <p className="text-fd-muted-foreground">
-        You can open{' '}
+        Open{' '}
         <Link
           href="/docs"
           className="text-fd-foreground font-semibold underline"
