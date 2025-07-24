@@ -35,5 +35,15 @@ export const baseOptions: BaseLayoutProps = {
     ),
   },
   // see https://fumadocs.dev/docs/ui/navigation/links
-  links: [],
+  links: [
+  {
+      text:'Docs',
+      url:'/docs'
+  },
+  {
+      text:'Admin',
+      url:'/admin'
+  },
+  ],
+  githubUrl: "https://github.com/MFarabi619/fumadocs-payloadcms",
 };
