@@ -14,10 +14,11 @@
   "dependencies": {
     "@libsql/client": "^0.15.10",
     "@payloadcms/db-sqlite": "^3.48.0",
-    "@payloadcms/storage-s3": "^3.48.0",
     "@payloadcms/next": "^3.48.0",
     "@payloadcms/payload-cloud": "^3.48.0",
     "@payloadcms/richtext-lexical": "^3.48.0",
+    "@payloadcms/storage-s3": "^3.48.0",
+    "@payloadcms/storage-vercel-blob": "^3.48.0",
     "fumadocs-core": "15.6.5",
     "fumadocs-mdx": "11.7.0",
     "fumadocs-ui": "15.6.5",

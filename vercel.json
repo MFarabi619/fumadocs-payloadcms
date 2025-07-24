@@ -3,5 +3,5 @@
   "framework": "nextjs",
   "installCommand": "pnpm i",
   "devCommand": "pnpm dev",
-  "buildCommand": "pnpm build"
+  "buildCommand": "pnpm payload migrate; pnpm build;"
 }

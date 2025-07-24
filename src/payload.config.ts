@@ -1,6 +1,7 @@
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
-import {s3Storage} from "@payloadcms/storage-s3";
+// import {s3Storage} from "@payloadcms/storage-s3";
+import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob";
 import { buildConfig } from 'payload'
 
 import { fileURLToPath } from 'url'
@@ -30,6 +31,7 @@ export default buildConfig({
       seed({payload, req});
     }
   },
+  sharp,
   debug: true,
   defaultDepth: 3,
   admin: {
@@ -48,7 +50,9 @@ export default buildConfig({
   },
   collections: [Users, Media],
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || 'YOUR_SECRET_HERE',
+  secret: process.env.PAYLOAD_SECRET ?
+    process.env.PAYLOAD_SECRET :
+    process.env.NODE_ENV === 'development' && 'YOUR_SECRET_HERE',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
@@ -65,25 +69,33 @@ export default buildConfig({
       authToken: process.env.AUTH_TOKEN || process.env.TURSO_AUTH_TOKEN || '',
     },
   }),
-  sharp,
   plugins: [
-    s3Storage({
+    vercelBlobStorage({
       enabled: process.env.NODE_ENV !== "development",
       collections: {
         media: {
           prefix: "./media",
         },
       },
-      bucket: process.env.S3_BUCKET || "",
-      config: {
-        forcePathStyle: true, // Important for using Supabase
-        credentials: {
-          accessKeyId: process.env.S3_ACCESS_KEY_ID || "",
-          secretAccessKey: process.env.S3_SECRET_ACCESS_KEY || "",
-        },
-        region: process.env.S3_REGION || "",
-        endpoint: process.env.S3_ENDPOINT || "",
-      },
+      token: process.env.BLOB_READ_WRITE_TOKEN || '',
     }),
+    // s3Storage({
+    //   enabled: process.env.NODE_ENV !== "development",
+    //   collections: {
+    //     media: {
+    //       prefix: "./media",
+    //     },
+    //   },
+    //   bucket: process.env.S3_BUCKET || "",
+    //   config: {
+    //     forcePathStyle: true, // Important for using Supabase
+    //     credentials: {
+    //       accessKeyId: process.env.S3_ACCESS_KEY_ID || "",
+    //       secretAccessKey: process.env.S3_SECRET_ACCESS_KEY || "",
+    //     },
+    //     region: process.env.S3_REGION || "",
+    //     endpoint: process.env.S3_ENDPOINT || "",
+    //   },
+    // }),
   ],
 })

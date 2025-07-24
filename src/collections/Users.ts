@@ -3,13 +3,7 @@ import {getOrUploadMedia} from "@/lib/seed";
 
 export const Users: CollectionConfig = {
   slug: 'users',
-  auth: {
-    cookies: {
-      sameSite: "None",
-      secure: process.env.NODE_ENV !== "development",
-      domain: process.env.NODE_ENV === "development" ? "localhost" : ".vercel.app",
-    },
-  },
+  auth: true,
   admin: {
     livePreview: {
       url:
