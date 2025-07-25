@@ -32,13 +32,21 @@ Open http://localhost:3000 with your browser to see the result.
 
 Before deploying, set the variables from `.env.example` in your `.env.production` or hosting platform.
 
-Make sure to add your production url to CORS & CSRF origins as well to be able to query the deployed API endpoints.
+Make sure to add your production `BASE_URL` to CORS & CSRF origins as well to be able to query the deployed API endpoints.
 
 This example uses [SQLite](https://www.sqlite.org) as the database. You can deploy it to any Next.js-compatible platform with a cloud integration with providers such as [Turso](https://turso.tech).
+
+For object storage, this example uses [Vercel Blob](https://vercel.com/docs/vercel-blob). You can use any [storage adapter](https://payloadcms.com/docs/upload/storage-adapters) of your choice.
 
 | [Vercel](https://vercel.com) | [Netlify](https://netlify.com) |
 |-|-|
 | ![Vercel Turso Integration](public/vercel-turso-integration.png) | ![Netlify Turso Extension](public/netlify-turso-extension.png) |
+
+Both Turso & Vercel Blob were set up via storage integrations for this deployed example. 
+
+| | |
+|-|-|
+| ![Vercel Storage Integrations](public/vercel-storage-integrations.png) | ![Vercel Deployment Environment Variables](public/vercel-environment-variables.png) |
 
 ## Learn More
 
@@ -48,4 +56,3 @@ resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
   features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
