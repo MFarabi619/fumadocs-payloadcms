@@ -12,7 +12,9 @@
 
 This is a simple example for using [Fumadocs](https://fumadocs.dev) with [Payload CMS](https://payloadcms.com) combined into a single [Next.js](https://nextjs.org) app.
 
-## Setup
+[![Edit MFarabi619/fumadocs-payloadcms/main](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/MFarabi619/fumadocs-payloadcms/main?import=true&embed=1&showConsole=true)
+
+## Local Setup
 
 Initialize the project:
 
