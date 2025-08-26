@@ -10,7 +10,13 @@
 |-|-|
 | ![Fumadocs Landing Page](public/fumadocs-landing-page.png) | ![Payload CMS Landing Page](public/payloadcms-landing-page.png) |
 
-This is a simple example for using [Fumadocs](https://fumadocs.dev) with [Payload CMS](https://payloadcms.com) combined into a single [Next.js](https://nextjs.org) app.
+<div align="center">
+
+![pnpm Badge](https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=fff)
+<a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white" alt="Conventional Commits"></a> 
+</div>
+
+Simple, deploy-ready example for using [Fumadocs](https://fumadocs.dev) with [Payload CMS](https://payloadcms.com) combined into a single [Next.js](https://nextjs.org) app.
 
 [![Edit MFarabi619/fumadocs-payloadcms/main](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/MFarabi619/fumadocs-payloadcms/main?import=true&embed=1&showConsole=true)
 
