@@ -6,6 +6,10 @@
 /out/
 /build
 *.tsbuildinfo
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
 #====================================================
 #                 Caches & Logs
@@ -15,23 +19,26 @@
 .source
 .vercel
 sqlite.db
-media
+/media
 
 #====================================================
 #                  Dependencies
 #====================================================
 /node_modules
+/.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/install-state.gz
 
 #====================================================
 #                  Miscellaneous
 #====================================================
 .DS_Store
 *.pem
-/.pnp
-.pnp.js
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/.idea/*
+!/.idea/runConfigurations
 
 #====================================================
 #              Environment Variables
