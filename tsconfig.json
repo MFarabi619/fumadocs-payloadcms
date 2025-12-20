@@ -25,7 +25,8 @@
       ],
       "fumadocs-mdx:collections/*": [
         ".source/*"
-      ]
+      ],
+      "@payload-config": ["./src/payload.config.ts"]
     },
     "plugins": [
       {
