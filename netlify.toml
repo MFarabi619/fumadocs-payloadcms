@@ -1,5 +1,5 @@
 [build]
-command = "pnpm payload migrate; pnpm build;"
+command = "bun run payload migrate; bun run build;"
 publish = ".next"
 
 [[plugins]]
