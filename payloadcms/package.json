@@ -1,9 +1,0 @@
-{
-  "name": "",
-  "type": "module",
-  "scripts": {
-    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
-    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint"
-  }
-}

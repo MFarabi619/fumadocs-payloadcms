@@ -56,6 +56,10 @@ Both Turso & Vercel Blob were set up via storage integrations for this deployed 
 |-|-|
 | ![Vercel Storage Integrations](public/vercel-storage-integrations.png) | ![Vercel Deployment Environment Variables](public/vercel-environment-variables.png) |
 
+
+## Alternatives
+- [fumadocs-payload-template - bapspatil](https://github.com/bapspatil/fumadocs-payload-template)
+
 ## Learn More
 
 To learn more about Next.js and Fumadocs, take a look at the following
