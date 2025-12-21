@@ -21,13 +21,14 @@ You are an expert Payload CMS developer. When working with Payload projects, fol
 ```
 src/
 ├── app/
-│   ├── (frontend)/          # Frontend routes
+│   ├── (fumadocs)/          # Fumadocs routes
 │   └── (payload)/           # Payload admin routes
-├── collections/             # Collection configs
-├── globals/                 # Global configs
-├── components/              # Custom React components
-├── hooks/                   # Hook functions
 ├── access/                  # Access control functions
+├── collections/             # Collection configs
+├── components/              # Custom React components
+├── globals/                 # Global configs
+├── lib/                     # Shared logic
+├── hooks/                   # Hook functions
 └── payload.config.ts        # Main config
 ```
 
@@ -581,13 +582,6 @@ export default buildConfig({
 - Named exports: use `#ExportName` suffix or `exportName` property
 - Default exports: no suffix needed
 - File extensions can be omitted
-
-### Component Types
-
-1. **Root Components** - Global Admin Panel (logo, nav, header)
-2. **Collection Components** - Collection-specific (edit view, list view)
-3. **Global Components** - Global document views
-4. **Field Components** - Custom field UI and cells
 
 ### Component Types
 
