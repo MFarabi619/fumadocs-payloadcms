@@ -34,7 +34,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'bun dev',
+    command: 'pnpm dev',
     reuseExistingServer: true,
     url: 'http://localhost:3000',
   },

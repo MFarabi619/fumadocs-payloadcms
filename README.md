@@ -12,7 +12,7 @@
 
 <div align="center">
 
-![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)
+![pnpm Badge](https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=fff)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
@@ -28,13 +28,13 @@ Simple, deploy-ready example for using [Fumadocs](https://fumadocs.dev) with [Pa
 Initialize the project:
 
 ```bash
-bun i
+pnpm i
 ```
 
 Run development server:
 
 ```bash
-bun dev
+pnpm dev
 ```
 
 Open http://localhost:3000 with your browser to see the result.

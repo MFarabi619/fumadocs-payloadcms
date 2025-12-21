@@ -1,5 +1,5 @@
 {
-  "npm.packageManager": "bun",
+  "npm.packageManager": "pnpm",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "typescript.tsdk": "node_modules/typescript/lib",
