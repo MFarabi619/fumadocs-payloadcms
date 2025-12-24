@@ -28,7 +28,7 @@ Simple, deploy-ready example for using [Fumadocs](https://fumadocs.dev) with [Pa
 Initialize the project:
 
 ```bash
-pnpm i
+pnpm i # `bun i` works too
 ```
 
 Run development server:
