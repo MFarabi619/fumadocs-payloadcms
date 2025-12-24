@@ -13,7 +13,6 @@ const config = {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
     // your project has type errors.
-    // !! WARN !!
     ignoreBuildErrors: true,
   },
   webpack: (webpackConfig) => {
@@ -27,6 +26,4 @@ const config = {
   },
 }
 
-// export default withMDX(config);
-// export default withPayload(nextConfig, { devBundleServerPackages: false })
 export default withPayload(withMDX(config), { devBundleServerPackages: false })
