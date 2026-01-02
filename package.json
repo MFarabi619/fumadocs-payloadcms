@@ -36,7 +36,7 @@
     "graphql": "^16.8.1",
     "libsql": "^0.5.20",
     "lucide-react": "^0.561.0",
-    "next": "16.1.0",
+    "next": "16.1.1",
     "payload": "3.69.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
