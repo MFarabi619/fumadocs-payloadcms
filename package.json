@@ -68,8 +68,8 @@
     "pnpm": "^9 || ^10"
   },
   "optionalDependencies": {
-    "@libsql/darwin-arm64": "0.5.20",
-    "@libsql/linux-arm64-gnu": "0.5.20",
-    "@libsql/linux-x64-gnu": "0.5.20"
+    "@libsql/darwin-arm64": "0.5.22",
+    "@libsql/linux-arm64-gnu": "0.5.22",
+    "@libsql/linux-x64-gnu": "0.5.22"
   }
 }
